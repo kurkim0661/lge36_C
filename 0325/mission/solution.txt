@@ -1,0 +1,18 @@
+
+1. 
+$ cat fruits.txt | sort | uniq
+
+2. 
+$ mkfifo myfifo
+$ cat hello.txt > myfifo
+
+# 다른 터미널에서
+$ cat myfifo > hello2.txt
+
+또는
+
+$ cat hello.txt > myfifo &
+$ cat myfifo > hello2.txt
+
+3.
+$ cat a.txt > b.txt
