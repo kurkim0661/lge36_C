@@ -1,0 +1,33 @@
+1. NW가 포함된 모든 행을 출력하시오.
+$ egrep NW file.txt
+
+2. n으로 시작하는 모든 행을 출력하시오.
+$ egrep '^n' file.txt
+
+3. 4로 끝나는 모든 행을 출력하시오.
+$ egrep '4$' file.txt
+
+4. TB Savage 패턴이 포함된 모든 행을 출력하시오.
+$ egrep 'TB Savage' file.txt
+
+5. 숫자 5에, 이어서 마침표(.)와 한 문자가 포함된 행을 출력하시오.
+$ egrep '5\..' file.txt
+
+6. .5 표시가 포함된 행을 출력하시오.
+$ egrep '\.5' file.txt
+
+
+7. w나 e로 시작하는 행을 출력하시오.
+$ egrep '^[we]' file.txt
+
+8. s 다음에 s가 0번 이상 있고 그 다음 공백이 오는 패턴이 포함된 행을 출력하시오.
+$ egrep 'ss*\s' file.txt
+
+9. 소문자가 최소 9개 이상 연이어 나오는 모든 행을 출력하시오.
+$ egrep '[a-z]{9,}' file.txt
+
+10. 대문자 두 개와 공백 하나 그리고 대문자 하나가 연이어 나오는 문자열이 포함된 행을 출력하시오.
+$ egrep '[A-Z]{2}\s[A-Z]' file.txt
+
+11. north로 시작하는 단어가 포함된 모든 행을 출력하시오
+$ egrep '^north|\snorth' file.txt
