@@ -15,5 +15,7 @@ echo \$name    # $name
 result=$(date)
 echo $result
 
-result=`pwd`
-echo $result
+result=`ls -l`
+echo "$result"
+
+
